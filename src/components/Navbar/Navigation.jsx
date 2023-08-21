@@ -1,4 +1,4 @@
-import DesktopNavbar from './DesktopNavbar'
+{/* import DesktopNavbar from './DesktopNavbar'
 import Navbar from './Navbar'
 import classes from "./Navbar.module.css"
 
@@ -12,4 +12,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation;
+export default Navigation; */}

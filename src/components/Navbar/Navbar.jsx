@@ -22,31 +22,36 @@ const Navbar = () => {
   />
 
   const closeIcon = <IoMdClose
-    className={classes.closeIcon}
+    className={classes.closeIcon} 
     size='25px'
     onClick={() => setOpen(!open)}
   />
 
   return (
-    <header className={classes.header}>
+    
+    <nav className={classes.navbar}>
       <NavLink to="/" className={classes.brand}><span>Raphael</span></NavLink>
-      <nav className={classes.MoileNavigation}>
       {open ? closeIcon : openIcon}
       {open && (
         <>
           <ul className={classes.menu}>
-            <NavLink to="/about">
+            <NavLink to="/about" onClick={() => setOpen(!open)}>
               <li>Sobre Mim</li>
             </NavLink>
-            <li>Projetos</li>
-            <li>Conhecimentos</li>
-            <li>Fale Comigo</li>
+            <NavLink to="/projects" onClick={() => setOpen(!open)}>
+              <li>Projetos</li>
+            </NavLink>
+            <NavLink to="/knowledge " onClick={() => setOpen(!open)}>
+              <li>Conhecimentos</li>
+            </NavLink>
+            <NavLink to="/contact" onClick={() => setOpen(!open)}>
+              <li>Fale Comigo</li>
+            </NavLink>
           </ul>
         </>
-        
       )}
-      </nav>
-    </header>
+    </nav>
+    
   )
 }
 
