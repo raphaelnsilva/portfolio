@@ -1,6 +1,6 @@
 
 import {NavLink} from 'react-router-dom';
-import classes from './Navbar.module.css';
+import styles from './Navbar.module.css';
 
 // HOOKS 
 import {useState} from 'react';
@@ -16,41 +16,45 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const openIcon = <AiOutlineMenu 
-    className={classes.menuIcon}
+    className={styles.openIcon}
     size='25px' 
     onClick={() => setOpen(!open)}
   />
 
   const closeIcon = <IoMdClose
-    className={classes.closeIcon} 
+    className={styles.closeIcon} 
     size='25px'
     onClick={() => setOpen(!open)}
   />
 
   return (
     
-    <nav className={classes.navbar}>
-      <NavLink to="/" className={classes.brand}><span>Raphael</span></NavLink>
-      {open ? closeIcon : openIcon}
-      {open && (
-        <>
-          <ul className={classes.menu}>
-            <NavLink to="/about" onClick={() => setOpen(!open)}>
-              <li>Sobre Mim</li>
-            </NavLink>
-            <NavLink to="/projects" onClick={() => setOpen(!open)}>
-              <li>Projetos</li>
-            </NavLink>
-            <NavLink to="/knowledge " onClick={() => setOpen(!open)}>
-              <li>Conhecimentos</li>
-            </NavLink>
-            <NavLink to="/contact" onClick={() => setOpen(!open)}>
-              <li>Fale Comigo</li>
-            </NavLink>
-          </ul>
-        </>
-      )}
-    </nav>
+    <header className={styles.container}>
+      <nav className={styles.navbar}>
+        <NavLink to="/portfolio/" className={styles.brand}>
+          <span>Raphael</span>
+        </NavLink>
+        {open ? closeIcon : openIcon}
+        {open && (
+          <>
+            <ul className={styles.menu}>
+              <NavLink to="/about" onClick={() => setOpen(!open)}>
+                <li>Sobre Mim</li>
+              </NavLink>
+              <NavLink to="/projects" onClick={() => setOpen(!open)}>
+                <li>Projetos</li>
+              </NavLink>
+              <NavLink to="/knowledge " onClick={() => setOpen(!open)}>
+                <li>Conhecimentos</li>
+              </NavLink>
+              <NavLink to="/contact" onClick={() => setOpen(!open)}>
+                <li>Fale Comigo</li>
+              </NavLink>
+            </ul>
+          </>
+        )}
+      </nav>
+    </header>
     
   )
 }
