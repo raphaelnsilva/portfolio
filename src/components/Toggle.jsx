@@ -1,6 +1,8 @@
 import './Toggle.css';
 
 const Toggle = () => {
+
+  
   return (
     <div>
       <label className="switch">
