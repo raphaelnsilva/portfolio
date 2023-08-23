@@ -12,7 +12,7 @@ const Home = () => {
   })
 
   return (
-    <>
+    <section id='home'>
       <div className='homeContainer'>
         <div className="content">
           <p>HELLO WORLD! 👋🏻</p>
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         
       </div>
-    </>
+    </section>
   )
 }
 
