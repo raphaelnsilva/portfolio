@@ -17,15 +17,6 @@
   cursor: pointer;
 }
 
-.menuDesktop {
-  display: none;
-}
-
-.closeIcon,
-.openIcon {
-  cursor: pointer;
-}
-
 .brand span {
   font-size: 1.2em;
   font-weight: 900;
@@ -33,16 +24,36 @@
   color: #000;
 }
 
+.menuDesktop {
+  display: none;
+}
+
+.iconsDesktop {
+  display: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 14px;
+}
+
+.closeIcon,
+.openIcon {
+  cursor: pointer;
+}
+
 .menu {
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.226);
   background-color: #F6FCFF;
   position: absolute;
-  height: 300%;
+  height: 360%;
   width: 100%;
   z-index: 1000;
   top: 60px;
   right: 0;
-  border-radius: 0 8px 8px;
+  border-radius: 0 0 15px 15px;
 }
 
 .menu li {
@@ -75,4 +86,10 @@
     color: #fff;
     transition: .5s;
   }
+
+  .iconsDesktop {
+    display: flex;
+    gap: 20px;
+  }
 }
+
