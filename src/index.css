@@ -77,3 +77,7 @@ button[disable] {
   text-decoration: underline;
   margin-top: 2rem;
 }
+
+strong {
+  color:#6991F0;
+}

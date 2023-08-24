@@ -66,25 +66,33 @@ const Navbar = () => {
       {open && (
         <>
           <ul className='menu'>
-            <Link onClick={() => setOpen(!open)}>
-              <li>Sobre Mim</li>
+            <Link onClick={() => setOpen(!open)}
+              to='about' 
+              smooth={true} 
+              duration={500} 
+            ><li>Sobre Mim</li>
             </Link>
-            <Link  onClick={() => setOpen(!open)}>
-              <li>Projetos</li>
+            <Link onClick={() => setOpen(!open)}  
+              to='projects'   
+              smooth={true} 
+              duration={500}
+            ><li>Projetos</li>
             </Link>
-            <Link onClick={() => setOpen(!open)}>
-              <li>Conhecimentos</li>
+            <Link onClick={() => setOpen(!open)}
+              to='experience' 
+              smooth={true} 
+              duration={500}
+            ><li>Conhecimentos</li> 
             </Link>
-            <Link onClick={() => setOpen(!open)}>
+            <Link 
+              onClick={() => setOpen(!open)}>
               <li>Fale Comigo</li>
             </Link>
             <div className="icons">
-              <a href='https://github.com/raphaelnsilva' target='_blank'>
-                {gitIcon}
-              </a>
-              <a href='https://github.com/raphaelnsilva' target='_blank'>
-                {linkedinIcon}
-              </a>
+              <a href='https://github.com/raphaelnsilva' 
+                target='_blank'>{gitIcon}</a>
+              <a href='https://github.com/raphaelnsilva' 
+                target='_blank'>{linkedinIcon}</a>
             </div>
           </ul>
         </>

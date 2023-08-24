@@ -62,7 +62,7 @@
   border-bottom: 1px solid rgba(0,0,0, 0.089);
 }
 
-@media (min-width: 990px) {
+@media (min-width: 1024px) {
   .closeIcon,
   .openIcon {
     display: none;

@@ -1,16 +1,24 @@
+#about {
+  font-size: 62,5%;
+}
+
 .about {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: rgba(255, 0, 0, 0.425);
+  background-color: #e5eef1;
   height: 100vh;
   width: 100vw;
 }
 
 .about p {
-  color: #aaa;
+  color: #000;
   margin-bottom: 2em;
+  width: 400px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .about a {
