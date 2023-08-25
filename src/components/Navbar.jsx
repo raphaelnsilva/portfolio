@@ -36,32 +36,57 @@ const Navbar = () => {
   return (
   
     <nav className='navbar'>
-      <Link to='home' smooth={true} duration={500} className='brand'>
-        <span>Raphael</span>
+
+      <Link to='home'
+       smooth={true} 
+       duration={500} 
+       className='brand'>
+       <span>Raphael</span>
       </Link>
       
       <ul className='menuDesktop'>
-        <Link to='about' smooth={true} duration={500} onClick={() => setOpen(!open)}>
+
+        <Link onClick={() => setOpen(!open)}
+          to='about'
+          smooth={true} 
+          duration={500}>
           <li>Sobre Mim</li>
         </Link>
-        <Link to='projects' smooth={true} duration={500} onClick={() => setOpen(!open)}>
+        
+        <Link onClick={() => setOpen(!open)} 
+          to='projects' 
+          smooth={true} 
+          duration={500}>
           <li>Projetos</li>
         </Link>
-        <Link  onClick={() => setOpen(!open)}>
+
+        <Link onClick={() => setOpen(!open)} 
+          to='experience' 
+          smooth={true} 
+          duration={500}>
           <li>Conhecimentos</li>
         </Link>
-        <Link onClick={() => setOpen(!open)}>
+
+        <Link onClick={() => setOpen(!open)} 
+          to='contactMe' 
+          smooth={true} 
+          duration={500}>
           <li>Fale Comigo</li>
         </Link>
+        
       </ul>
+
       <div className="iconsDesktop">
-        <a href='https://github.com/raphaelnsilva' target='_blank'>
+        <a href='https://github.com/raphaelnsilva' 
+          target='_blank'>
           <li>{gitIcon}</li>
         </a>
-        <a href='https://github.com/raphaelnsilva' target='_blank'>
+        <a href='https://github.com/raphaelnsilva' 
+          target='_blank'>
           <li>{linkedinIcon}</li>
         </a>
       </div>
+
       {open ? closeIcon : openIcon}
       {open && (
         <>
@@ -69,8 +94,8 @@ const Navbar = () => {
             <Link onClick={() => setOpen(!open)}
               to='about' 
               smooth={true} 
-              duration={500} 
-            ><li>Sobre Mim</li>
+              duration={500}>
+              <li>Sobre Mim</li>
             </Link>
             <Link onClick={() => setOpen(!open)}  
               to='projects'   

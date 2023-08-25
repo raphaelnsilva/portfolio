@@ -1,37 +1,44 @@
-import {FaProjectDiagram} from 'react-icons/fa'
+import {FaProjectDiagram, FaExternalLinkAlt} from 'react-icons/fa'
 import './Projects.css';
 
+const ProjectCard = ({title, imageSrc, description}) => (
+  <div className='cards'>
+    <h2>{title}</h2>
+    <img src={imageSrc} alt={title} />
+    <p>{description}</p>
+    <div className="cardLinks">
+      <a href="#">
+        <FaProjectDiagram size='20px'/>
+        <h3>Repositório</h3>
+      </a>
+      <a href="#">
+        <FaExternalLinkAlt size='20px'/>
+        <h3>Ver Site</h3>
+      </a>
+    </div>
+  </div>
+)
+
 const Projects = () => {
-
-  const projectIcon = <FaProjectDiagram
-    size='40px'
-  />
-
   return (
-    <section id="projects">
-      <div className="head">
-        <h1>Projetos</h1>
-        {projectIcon}
-      </div>
-      <div className="content">
-        <div className='cards'>
-          <h2>BLOG</h2>
-          <img src="./blog.png" alt="" />
-          <p>Projeto desenvolvido em React com a utilização do Firebase para gerenciar as autenticações.</p>
-          <p>REACT - FIREBASE</p>
-        </div>
-        <div className='cards'>
-          <h2>buscador de CEP</h2>
-          <img src="./cep.png" alt="" />
-          <p>Este site utiliza uma API para colher as informações dos endereços e mostrar ao usuario.</p>
-          <p>REACT - AXIOS</p>
-        </div>
-        <div className='cards'>
-          <h2>Palavra Secreta</h2>
-          <img src="./secretword.png" alt="" />
-          <p>Este foi meu primeiro projeto com react, para forçar a utilização de hooks  comouseCallback, useEffect, useState </p>
-          <p>REACT - CSS</p>
-        </div>
+    <section id='projects'>
+      <h1>Projetos</h1>
+      <div className='content'>
+        <ProjectCard
+          title='BLOG'
+          imageSrc='./blog.png'
+          description='Projeto desenvolvido em React com a utilização do Firebase para gerenciar as autenticações.'
+        />
+        <ProjectCard
+          title='Buscador de CEP'
+          imageSrc='./cep.png'
+          description='Este site utiliza uma API para colher as informações dos endereços e mostrar ao usuário.'
+        />
+        <ProjectCard
+          title='Palavra Secreta'
+          imageSrc='./secretword.png'
+          description='Este foi meu primeiro projeto com React, para forçar a utilização de hooks como useCallback, useEffect, useState.'
+        />
       </div>
     </section>
   )

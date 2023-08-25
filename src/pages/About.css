@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e5eef1;
+  background-color: #f6fcff;
   height: 100vh;
   width: 100vw;
 }
@@ -26,10 +26,10 @@
   padding: 10px 15px;
 }
 
-.aboutIcon {
+.cardLinks {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
-  font-size: 1.5rem;
-  padding-bottom: 40px;
+  
 }

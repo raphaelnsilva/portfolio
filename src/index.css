@@ -1,5 +1,5 @@
 body {
-  background-color: #F6FCFF;
+  background-color: #EBF2F5;
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -78,6 +78,3 @@ button[disable] {
   margin-top: 2rem;
 }
 
-strong {
-  color:#6991F0;
-}
