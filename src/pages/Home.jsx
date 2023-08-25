@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <section id='home'>
       <div className='homeContainer'>
-        <div className="content">
+        <div className="typewriter">
           <p>HELLO WORLD! 👋🏻</p>
           <h1>Eu sou Raphael,</h1>
           <h3>
@@ -23,11 +23,9 @@ const Home = () => {
           </h3>
           <button className="btn btn-outline">Fale Comigo</button>
         </div>
-
         <div className="imageContainer">
           <img src="./airplane4.png" alt="Imagem Animada" className="animatedImage" />
         </div>
-        
       </div>
     </section>
   )

@@ -18,11 +18,18 @@
   margin-bottom: 2em;
   width: 400px;
   font-size: 1rem;
-  font-weight: 500;
 }
 
 .about a {
   display: block;
   margin-top: 15px;
   padding: 10px 15px;
+}
+
+.aboutIcon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 1.5rem;
+  padding-bottom: 40px;
 }
