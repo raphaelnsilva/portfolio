@@ -24,7 +24,7 @@ const Home = () => {
           <button className="btn btn-outline">Fale Comigo</button>
         </div>
         <div className="imageContainer">
-          <img src="./airplane4.png" alt="Imagem Animada" className="animatedImage" />
+          <img src="./airplane4.png" alt="airplane" className="animatedImage" />
         </div>
       </div>
     </section>

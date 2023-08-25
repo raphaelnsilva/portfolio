@@ -36,7 +36,7 @@ const Navbar = () => {
   return (
   
     <nav className='navbar'>
-      <Link href='#home' className='brand'>
+      <Link to='home' smooth={true} duration={500} className='brand'>
         <span>Raphael</span>
       </Link>
       
