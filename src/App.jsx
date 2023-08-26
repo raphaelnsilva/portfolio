@@ -3,6 +3,7 @@ import useLocalStorage from 'use-local-storage';
 
 // Components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -27,6 +28,7 @@ function App() {
       <Projects/>
       <About/>
       <Experience/>
+      <Footer/>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 #experience {
   font-size: 62.5%;
   height: 100%;
+  
   background-color: var(--color1);
   color: var(--color4);
 }
@@ -29,6 +30,8 @@
 }
 
 .contentEx {
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;

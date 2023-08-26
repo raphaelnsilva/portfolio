@@ -3,8 +3,7 @@ import './Navbar.css';
 import {useState} from 'react';
 import { Link } from 'react-scroll';
 // ICONS
-import {FiGithub} from 'react-icons/fi';
-import {FiLinkedin} from 'react-icons/fi';
+import {FiGithub,FiLinkedin} from 'react-icons/fi';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
 import Toggle from './Toggle'
@@ -44,21 +43,18 @@ const Navbar = () => {
       </Link>
       <Toggle/>
       <ul className='menuDesktop'>
-
-        <Link onClick={() => setOpen(!open)}
-          to='about'
-          smooth={true} 
-          duration={500}>
-          <li>Sobre Mim</li>
-        </Link>
-        
         <Link onClick={() => setOpen(!open)}
           to='projects' 
           smooth={true} 
           duration={500}>
           <li>Projetos</li>
         </Link>
-
+        <Link onClick={() => setOpen(!open)}
+          to='about'
+          smooth={true} 
+          duration={500}>
+          <li>Sobre Mim</li>
+        </Link>
         <Link onClick={() => setOpen(!open)} 
           to='experience' 
           smooth={true} 

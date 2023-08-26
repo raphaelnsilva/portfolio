@@ -51,6 +51,8 @@
 }
 
 .content {
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
