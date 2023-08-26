@@ -7,8 +7,7 @@ import {FiGithub} from 'react-icons/fi';
 import {FiLinkedin} from 'react-icons/fi';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
-
-
+import Toggle from './Toggle'
 
 const Navbar = () => {
 
@@ -43,7 +42,7 @@ const Navbar = () => {
        className='brand'>
        <span>Raphael</span>
       </Link>
-      
+      <Toggle/>
       <ul className='menuDesktop'>
 
         <Link onClick={() => setOpen(!open)}
@@ -53,7 +52,7 @@ const Navbar = () => {
           <li>Sobre Mim</li>
         </Link>
         
-        <Link onClick={() => setOpen(!open)} 
+        <Link onClick={() => setOpen(!open)}
           to='projects' 
           smooth={true} 
           duration={500}>
@@ -75,7 +74,7 @@ const Navbar = () => {
         </Link>
         
       </ul>
-
+      
       <div className="iconsDesktop">
         <a href='https://github.com/raphaelnsilva' 
           target='_blank'>

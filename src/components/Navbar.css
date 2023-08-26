@@ -1,4 +1,3 @@
-
 .navbar {
   position: fixed;
   width: -webkit-fill-available;
@@ -7,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5em 2em;
-  background-color: #ebf2f5;
+  background-color: var(--color2);
   z-index: 1000;
 }
 
@@ -23,7 +22,7 @@
   font-size: 1.2em;
   font-weight: 900;
   text-transform: uppercase;
-  color: #000;
+  color: var(--color4);
 }
 
 .menuDesktop {
@@ -44,11 +43,12 @@
 .closeIcon,
 .openIcon {
   cursor: pointer;
+  color: var(--color4);
 }
 
 .menu {
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.226);
-  background-color: #EBF2F5;
+  background-color: var(--color2);
   position: absolute;
   height: 360%;
   width: 100%;
@@ -84,8 +84,8 @@
   }
 
   .menuDesktop li:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color3);
+    color: var(--color1);
     transition: .5s;
   }
 
