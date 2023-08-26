@@ -1,26 +1,31 @@
 import './App.css'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-//pages
-import Home from './pages/Home'
+import useLocalStorage from 'use-local-storage';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import Footer from './components/Footer';
+import Projects from './pages/Projects'
 import Experience from './pages/Experience';
-// import Page from './pages/Page'
+
 
 function App() {
-  
+
+  const defaultDark = window.matchMedia('(prefers-color-schema: dark)').matches;
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+  const switchTheme = () => {
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme)
+  }
+
   return (
-    <>
-        <div className="App">
-          <Navbar />
-          <Home />
-          <About />
-          <Projects />
-          <Experience />
-        </div>
-        <Footer/>
-    </>
+    <div className='App' data-theme={theme}>
+      <Navbar/>
+      <Home/>
+      <Projects/>
+      <About/>
+      <Experience/>
+    </div>
   )
 }
 
