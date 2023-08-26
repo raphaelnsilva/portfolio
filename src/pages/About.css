@@ -1,0 +1,32 @@
+#about {
+  font-size: 62.5%;
+}
+
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color2);
+  height: 100vh;
+  color: var(--color4);
+  font-size: 1rem;
+}
+
+.about p {
+  margin-bottom: 2em;
+  width: 400px;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+
+  .about h2 {
+    font-size: 2rem;
+  }
+  .about p {
+    font-size: 1.2rem;
+    width: 500px;
+  }
+}

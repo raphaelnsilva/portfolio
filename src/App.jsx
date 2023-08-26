@@ -1,10 +1,13 @@
 import './App.css'
 import useLocalStorage from 'use-local-storage';
+
 // Components
 import Navbar from './components/Navbar';
+// Pages
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-// Pages
+import About from './pages/About';
+import Experience from './pages/Experience';
 
 
 function App() {
@@ -22,6 +25,8 @@ function App() {
       <Navbar/>
       <Home/>
       <Projects/>
+      <About/>
+      <Experience/>
     </div>
   )
 }
