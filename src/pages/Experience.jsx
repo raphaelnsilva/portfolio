@@ -22,6 +22,7 @@ const Experience = () => {
         />
         <ExperienceCard
           imageSrc='./htmlImage.png'
+          title='HTML5'
           description='HTML5 é uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.'
         />
         <ExperienceCard

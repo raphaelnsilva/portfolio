@@ -1,8 +1,22 @@
 body {
-  background-color: #EBF2F5;
-  padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  font-family:'Montserrat', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --color1: #F6FCFF;
+  --color2: #EBF2F5;
+  --color3: #6991F0;
+  --color4: #000;
+}
+[data-theme='dark'] {
+  --color1: #1E1E20;
+  --color2: #252529;
+  --color3: #6991F0;
+  --color4: #FFFFFF;
 }
 
 a, 
@@ -10,7 +24,7 @@ nav button {
   text-decoration: none;
   background-color: transparent;
   border: none;
-  color: #000;
+  color: var(--color4);
   transition: .4s;
   font-size: 1em;
   cursor: pointer;
@@ -19,62 +33,19 @@ nav button {
 
 a:hover,
 nav button:hover {
-  color: #bbb;
-}
-
-.btn {
-  background-color: #1a8918;
-  color: #FFF;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 10px;
-  width: 120px;
-  font-weight: bold;
-  border: none;
-  padding: 10px 15px;
-  font-size: 1em;
-}
-
-.btn.btn-dark {
-  background-color: #000;
-  border-radius: 0;
+  color: var(--color3);
 }
 
 .btn.btn-outline {
   background-color: transparent;
   border-radius: 0;
-  color: #000;
-  border: 1px solid #000;
+  color: var(--color4);
+  border: 1px solid var(--color4);
   padding: 7px 10px;
 }
 
-.btn:hover {
-  background-color: #0F730c;
-  color: #FFF;
-}
-
 .btn.btn-outline:hover { 
-  background-color: #000;
-}
-
-.btn.btn-danger:hover {
-  background-color: #DC3545;
-}
-
-button[disable] {
-  background-color: #AAA;
-}
-
-.container .error {
-  color: #721C24;
-  background-color: #F8D7DA;
-  border: 1px solid #f5c6cb;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.backBtn {
-  text-decoration: underline;
-  margin-top: 2rem;
+  background-color: var(--color4);
+  color: var(--color1);
 }
 
