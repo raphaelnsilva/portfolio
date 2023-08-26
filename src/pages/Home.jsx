@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Desenvolverdor Front-end', 'Web Designer'],
+    words: ['Desenvolverdor Front-end', 'Web Designer', 'Estudante De Tecnologia'],
     loop: {},
     typeSpeed: 50,
     deleteSpeed: 10
