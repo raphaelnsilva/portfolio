@@ -63,7 +63,7 @@ const Navbar = () => {
         </Link>
 
         <Link onClick={() => setOpen(!open)} 
-          to='contactMe' 
+          to='talktome' 
           smooth={true} 
           duration={500}>
           <li>Fale Comigo</li>

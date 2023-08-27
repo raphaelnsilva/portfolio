@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Experience from './pages/Experience';
+import Talktome from './pages/Talktome';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
       <Projects/>
       <About/>
       <Experience/>
+      <Talktome/>
       <Footer/>
     </div>
   )
