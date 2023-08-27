@@ -1,12 +1,16 @@
 .footer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   height: 250px;
-  background-color: var(--color1);
+  max-width: 1000px;
+  margin: auto;
+  background-color: var(--color2);
   color: var(--color4);
   border-top: 1px solid var(--color4);
 }
+
+
 
 .iconsFooter {
   display: flex;

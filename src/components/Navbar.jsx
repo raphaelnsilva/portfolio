@@ -104,9 +104,11 @@ const Navbar = () => {
               duration={500}
             ><li>Conhecimentos</li> 
             </Link>
-            <Link 
-              onClick={() => setOpen(!open)}>
-              <li>Fale Comigo</li>
+            <Link onClick={() => setOpen(!open)}
+              to='talktome'
+              smooth={true}
+              duration={500}
+            ><li>Fale Comigo</li>
             </Link>
             <div className="icons">
               <a href='https://github.com/raphaelnsilva' 

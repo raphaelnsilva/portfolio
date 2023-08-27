@@ -13,7 +13,6 @@ const Talktome = () => {
       await clipboardCopy('raphaelnunessilva@hotmail.com');
       setCopied(true);
 
-      // Exibe a mensagem de sucesso por 2 segundos e depois a oculta
       setTimeout(() => {
         setCopied(false);
       }, 2000);
@@ -27,17 +26,20 @@ const Talktome = () => {
       <div className={`email ${copied ? 'copied' : ''}`} 
         onClick={handleEmailClick}>
         <h2>Fale Comigo!</h2>
-        <p>Clique copiar para a área de transferência </p>
+        <p>Clique e copie para a área de transferência..</p>
         <button className='btn btn-outline'>
           <p>raphaelnunessilva@hotmail.com</p> 
           <PiMicrosoftOutlookLogoLight size='29px'/>
         </button>
         {copied && <p className="copy-success">Copiado com sucesso! <AiOutlineCheck/></p>}
-        
       </div>
-
-      <div className="emailImage">
-          <img src="./email.png" alt="airplane" className="animatedImage"/>
+      <div className='whatsBtn'>
+        <a href="https://wa.me/55986623604" target='_blank'>
+          <button className='btn btn-outline'>
+            <FaWhatsapp size='29px'/>
+            <p>WHATSAPP</p>
+          </button>
+        </a>
       </div>
     </section>
   );

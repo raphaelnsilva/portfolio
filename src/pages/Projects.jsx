@@ -39,16 +39,6 @@ const Projects = () => {
           imageSrc='./secretword.png'
           description='Este foi meu primeiro projeto com React, para forçar a utilização de hooks como useCallback, useEffect, useState.'
         />
-        <ProjectCard
-          title='Palavra Secreta'
-          imageSrc='./secretword.png'
-          description='Este foi meu primeiro projeto com React, para forçar a utilização de hooks como useCallback, useEffect, useState.'
-        />
-        <ProjectCard
-          title='Palavra Secreta'
-          imageSrc='./secretword.png'
-          description='Este foi meu primeiro projeto com React, para forçar a utilização de hooks como useCallback, useEffect, useState.'
-        />
       </div>
     </section>
   )

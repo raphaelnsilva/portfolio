@@ -1,5 +1,5 @@
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
-
+import { Link } from 'react-scroll';
 import './Home.css';
 
 const Home = () => {
@@ -21,7 +21,13 @@ const Home = () => {
             <span>{text}</span>
             <span><Cursor/></span>
           </h3>
-          <button className="btn btn-outline">Fale Comigo</button>
+          <Link to='talktome'
+            smooth={true} 
+            duration={500}>
+            <button className="btn btn-outline">
+              Fale Comigo
+            </button>
+          </Link>
         </div>
         <div className="imageContainer">
           <img src="./airplane4.png" alt="airplane" className="animatedImage" />
