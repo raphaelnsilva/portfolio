@@ -55,7 +55,8 @@ const Navbar = () => {
           duration={500}>
           <li>Sobre Mim</li>
         </Link>
-        <Link onClick={() => setOpen(!open)} 
+        <Link className={({isActive}) =>(isActive ? StyleSheet.active : "")}
+          onClick={() => setOpen(!open)} 
           to='experience' 
           smooth={true} 
           duration={500}>

@@ -25,6 +25,10 @@
   color: var(--color4);
 }
 
+.brand span:hover {
+  color: var(--color3);
+}
+
 .menuDesktop {
   display: none;
 }
