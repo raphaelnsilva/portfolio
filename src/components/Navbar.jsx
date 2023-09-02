@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 import {FiGithub,FiLinkedin} from 'react-icons/fi';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
-import Toggle from './Toggle'
+import Toggle from './Switch'
 
 const Navbar = () => {
 

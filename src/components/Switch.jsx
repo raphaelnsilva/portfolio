@@ -1,7 +1,7 @@
-import './Toggle.css'
+import './Switch.css'
 import useLocalStorage from 'use-local-storage';
 
-const Toggle = () => {
+const Switch = () => {
 
   const defaultDark = window.matchMedia('(prefers-color-schema: dark)').matches;
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
@@ -21,4 +21,4 @@ const Toggle = () => {
   )
 }
 
-export default Toggle
+export default Switch;
