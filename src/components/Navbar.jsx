@@ -13,23 +13,17 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   const openIcon = <AiOutlineMenu 
-    className='openIcon'
+    className='open-icon'
     size='25px' 
     onClick={() => setOpen(!open)}
   />
   const closeIcon = <IoMdClose
-    className='closeIcon'
+    className='close-icon'
     size='25px'
     onClick={() => setOpen(!open)}
   />
-  const gitIcon = <FiGithub
-    className='gitIcon'
-    size='25px'
-  />
-  const linkedinIcon = <FiLinkedin
-    className='linkedinIcon'
-    size='25px'
-  />
+  const gitIcon = <FiGithub size='25px'/>
+  const linkedinIcon = <FiLinkedin size='25px'/>
 
   return (
   
@@ -41,9 +35,9 @@ const Navbar = () => {
        <span>Raphael</span>
       </Link>
       <Switch/>
-      <ul className='menuDesktop'>
+      <ul className='menu-desktop'>
         <Link onClick={() => setOpen(!open)}
-          to='projects' 
+          to='projects'
           smooth={true} 
           duration={500}>
           <li>Projetos</li>
@@ -71,7 +65,7 @@ const Navbar = () => {
         
       </ul>
       
-      <div className="iconsDesktop">
+      <div className="icons-desktop">
         <a href='https://github.com/raphaelnsilva' 
           target='_blank'>
           <li>{gitIcon}</li>

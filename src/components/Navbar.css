@@ -29,11 +29,11 @@
   color: var(--color3);
 }
 
-.menuDesktop {
+.menu-desktop {
   display: none;
 }
 
-.iconsDesktop {
+.icons-desktop {
   display: none;
 }
 
@@ -44,8 +44,8 @@
   padding-top: 14px;
 }
 
-.closeIcon,
-.openIcon {
+.close-icon,
+.open-icon {
   cursor: pointer;
   color: var(--color4);
 }
@@ -69,8 +69,8 @@
 }
 
 @media (min-width: 1024px) {
-  .closeIcon,
-  .openIcon {
+  .close-icon,
+  .open-icon {
     display: none;
   }
 
@@ -78,22 +78,22 @@
     display: none;
   }
   
-  .menuDesktop {
+  .menu-desktop {
     display: flex;
     margin-right: 1em;
   }
 
-  .menuDesktop li {
+  .menu-desktop li {
     padding: .4em .6em;
   }
 
-  .menuDesktop li:hover {
+  .menu-desktop li:hover {
     background-color: var(--color3);
     color: var(--color1);
     transition: .5s;
   }
 
-  .iconsDesktop {
+  .icons-desktop {
     display: flex;
     gap: 20px;
   }
