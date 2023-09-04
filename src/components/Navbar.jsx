@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 import {FiGithub,FiLinkedin} from 'react-icons/fi';
 import {AiOutlineMenu} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
-import Toggle from './Switch'
+import Switch from './Switch'
 
 const Navbar = () => {
 
@@ -34,14 +34,13 @@ const Navbar = () => {
   return (
   
     <nav className='navbar'>
-
       <Link to='home'
        smooth={true} 
        duration={500} 
        className='brand'>
        <span>Raphael</span>
       </Link>
-      <Toggle/>
+      <Switch/>
       <ul className='menuDesktop'>
         <Link onClick={() => setOpen(!open)}
           to='projects' 
