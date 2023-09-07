@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.cardsEx {
+.cards-ex {
   background-color: var(--color2);
   width: 400px;
   height: 350px;
@@ -24,12 +24,12 @@
   font-size: 1.1rem;
 }
 
-.cardsEx div {
+.cards-ex div {
   padding: 40px 40px 0 40px;
   margin: 0;
 }
 
-.contentEx {
+.content-ex {
   max-width: 1300px;
   margin: auto;
   display: flex;
@@ -41,7 +41,7 @@
 }
 
 @media (min-width: 900px) {
-  .contentEx {
+  .content-ex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

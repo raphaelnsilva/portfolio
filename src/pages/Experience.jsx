@@ -1,7 +1,7 @@
 import './Experience.css'
 
 const ExperienceCard = ({imageSrc, title, description}) => (
-  <div className='cardsEx'>
+  <div className='cards-ex'>
     <div>
       <img src={imageSrc} alt={title} />
       <h3>{title}</h3>
@@ -14,7 +14,7 @@ const Experience = () => {
   return (
     <section id='experience'>
       <h1>Tecnologias usadas</h1>
-      <div className="contentEx">
+      <div className="content-ex">
         <ExperienceCard
           imageSrc='./cssImage.png'
           title='CSS3'
