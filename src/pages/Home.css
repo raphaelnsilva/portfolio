@@ -1,4 +1,4 @@
-.homeContainer{
+.home-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,14 +20,14 @@
   padding-bottom: 30px;
 }
 
-.imageContainer {
+.image-container {
   padding-top: 130px;
   position: relative;
   width: 250px; 
   animation: moveUpDown 1s infinite alternate; 
 }
 
-.animatedImage {
+.animated-image {
   width: 250px;
   height: 150px;
 }
@@ -42,7 +42,7 @@
 }
 
 @media (min-width: 1024px) {
-  .homeContainer {
+  .home-container {
     display: flex;
     padding-top: 0;
     flex-direction: row;
@@ -64,7 +64,7 @@
     margin: 10px 0 10px 0;
   }
 
-  .imageContainer{
+  .image-container{
     padding-top: 0px;
     position: relative;
     width: 400px;
@@ -72,7 +72,7 @@
     animation: moveUpDown 1s infinite alternate; 
   }
 
-  .animatedImage {
+  .animated-image {
     width: 400px;
     height: 200px;
   }

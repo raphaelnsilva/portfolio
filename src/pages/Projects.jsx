@@ -6,7 +6,7 @@ const ProjectCard = ({title, imageSrc, description, projectRepo, projectLink}) =
     <h2>{title}</h2>
     <img src={imageSrc} alt={title} />
     <p>{description}</p>
-    <div className="cardLinks">
+    <div className="card-links">
       <a href={projectRepo} target='_blank'>
         <FaProjectDiagram size='20px'/>
         <h3>Repositório</h3>

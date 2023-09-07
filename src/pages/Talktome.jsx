@@ -33,7 +33,7 @@ const Talktome = () => {
         </button>
         {copied && <p className="copy-success">Copiado com sucesso! <AiOutlineCheck/></p>}
       </div>
-      <div className='whatsBtn'>
+      <div className='whats-btn'>
         <a href="https://wa.me/55986623604" target='_blank'>
           <button className='btn btn-outline'>
             <FaWhatsapp size='29px'/>
