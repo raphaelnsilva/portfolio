@@ -11,6 +11,7 @@
   background-size: cover;
 }
 
+
 .typewriter {
   text-align: center;
   color: #F6FCFF;
@@ -46,14 +47,6 @@
 }
 
 @media (min-width: 1024px) {
-  .homeContainer {
-    display: flex;
-    padding-top: 0;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100vh;
-  }
-
   .typewriter {
     text-align: left;
   }
@@ -68,17 +61,5 @@
     margin: 10px 0 10px 0;
   }
 
-  .imageContainer{
-    padding-top: 0px;
-    position: relative;
-    width: 400px;
-    height: 200px; 
-    animation: moveUpDown 1s infinite alternate; 
-  }
-
-  .animatedImage {
-    width: 400px;
-    height: 200px;
-  }
 
 }

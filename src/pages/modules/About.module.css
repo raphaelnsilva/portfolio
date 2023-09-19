@@ -1,35 +1,28 @@
-#about {
-  font-size: 62.5%;
-}
+.main {
 
-.about {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
   background-color: var(--color2);
+  text-align: center;
   height: 100vh;
-  color: var(--color4);
+  color: var(--color3);
   font-size: 1rem;
 }
 
-.about h1 {
-  padding-top: 20px;
-}
 
-.about p {
-  margin-bottom: 2em;
-  width: 400px;
-  font-size: 1rem;
+
+.main p {
+  width: 330px;
 }
 
 @media (min-width: 1024px) {
 
-  .about h1 {
+  .main h1 {
     font-size: 2rem;
   }
-  .about p {
+  .main p {
     font-size: 1.2rem;
     width: 500px;
   }

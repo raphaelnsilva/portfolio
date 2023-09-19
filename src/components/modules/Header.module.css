@@ -22,7 +22,9 @@
   cursor: pointer;
   text-align: center;
   color: var(--color3);
+  transition: .4s;
 }
+
 
 .brand span {
   font-size: 1.2em;
