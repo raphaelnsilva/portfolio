@@ -1,34 +1,30 @@
-import './Footer.css'
-import {FiGithub,FiLinkedin} from 'react-icons/fi';
+import styles from './modules/Footer.module.css'
+import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 
 const Footer = () => {
 
-  const gitIcon = <FiGithub
-    className='gitIcon'
-    size='40px'
-  />
-  const linkedinIcon = <FiLinkedin
-    className='linkedinIcon'
-    size='40px'
-  />
+  const gitIcon = <AiFillLinkedin 
+  className={styles.social_icons}
+  size='30px'/>
+  const linkedinIcon = <AiFillGithub 
+  className={styles.social_icons}
+  size='30px'/>
 
   return (
-    <footer className='footer'>
-      
+    <footer className={styles.footer}>
         <div>
           <h3>Raphael</h3>
           <p>&copy;2023 por Raphael Nunes Silva.</p>
           <p>Todos os direitos reservados.</p>
           <p>v0.1</p>
         </div>
-        <div className="iconsFooter">
+        <div className={styles.icons_footer}>
           <a href='https://github.com/raphaelnsilva'
             target='_blank'>
-            <li>{gitIcon}</li>
+            {gitIcon}
           </a>
-          <a href='https://github.com/raphaelnsilva'
-            target='_blank'>
-            <li>{linkedinIcon}</li>
+          <a href='https://www.linkedin.com/in/raphaelsilvaa/'target='_blank'>
+            {linkedinIcon}
           </a>
         </div>
       

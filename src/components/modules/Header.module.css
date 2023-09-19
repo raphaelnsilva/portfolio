@@ -1,5 +1,6 @@
 .close_icon,
-.open_icon {
+.open_icon,
+.social_icons {
   cursor: pointer;
   color: var(--color3);
 }
@@ -93,6 +94,7 @@
 
   .menu_desktop li {
     padding: .4em .6em;
+    margin: 0 10px 0 10px;
   }
 
   .navbar li{

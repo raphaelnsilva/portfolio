@@ -22,15 +22,23 @@ function App() {
     setTheme(newTheme)
   }
 
+  const myObserver = new IntersectionObserver((entries) => {
+    console.log(entries)
+  })
+
+  const elements = document.querySelectorAll('.hidden')
+
+  elements.forEach((element) => myObserver.observe(element))
+
   return (
     <div className='App' data-theme={theme}>
       <Header/>
-      <Home/>
-      <Projects/>
-      <About/>
-      <Experience/>
-      <Talktome/>
-      <Footer/>
+      <Home className='hidden'/>
+      <Projects className='hidden'/>
+      <About className='hidden'/>
+      <Experience className='hidden'/>
+      <Talktome className='hidden'/>
+      <Footer className='hidden'/>
     </div>
   )
 }

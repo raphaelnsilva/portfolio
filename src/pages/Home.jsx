@@ -6,7 +6,7 @@ import styles from './modules/Home.module.css';
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Programador Full-Stack', 'Apaixonado por tecnologia', 'Estudante De Tecnologia'],
+    words: ['Programador Full-Stack', 'Amante de tecnologia', 'Estudante De Tecnologia'],
     loop: {},
     typeSpeed: 50,
     deleteSpeed: 10

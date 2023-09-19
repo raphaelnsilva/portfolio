@@ -1,10 +1,12 @@
 import styles from './modules/Header.module.css';
-// HOOKS 
 import {useState} from 'react';
 import { Link } from 'react-scroll';
-// ICONS
-import {FiGithub,FiLinkedin} from 'react-icons/fi';
-import {AiOutlineMenu} from 'react-icons/ai';
+
+import {
+  AiOutlineMenu,
+  AiFillLinkedin,
+  AiFillGithub
+} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
 import Switch from './Switch'
 
@@ -15,15 +17,17 @@ const Header = () => {
   const openIcon = <AiOutlineMenu 
     className={styles.open_icon}
     size='25px' 
-    onClick={() => setOpen(!open)}
-  />
+    onClick={() => setOpen(!open)}/>
   const closeIcon = <IoMdClose
     className={styles.close_icon}
     size='25px'
-    onClick={() => setOpen(!open)}
-  />
-  const gitIcon = <FiGithub size='25px'/>
-  const linkedinIcon = <FiLinkedin size='25px'/>
+    onClick={() => setOpen(!open)}/>
+  const gitIcon = <AiFillLinkedin 
+    className={styles.social_icons}
+    size='30px'/>
+  const linkedinIcon = <AiFillGithub 
+    className={styles.social_icons}
+    size='30px'/>
 
   return (
   
@@ -34,7 +38,9 @@ const Header = () => {
       className={styles.brand}>
        <span>Raphael</span>
       </Link>
+
       <Switch/>
+
       <ul className={styles.menu_desktop}>
         <Link onClick={() => setOpen(!open)}
           to='projects'
