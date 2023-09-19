@@ -1,11 +1,11 @@
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import { Link } from 'react-scroll';
-import './Home.css';
+import styles from './modules/Home.module.css';
 
 const Home = () => {
 
   const [text] = useTypewriter({
-    words: ['Desenvolverdor Front-end', 'Web Designer', 'Estudante De Tecnologia'],
+    words: ['Programador Full-Stack', 'Apaixonado por tecnologia', 'Estudante De Tecnologia'],
     loop: {},
     typeSpeed: 50,
     deleteSpeed: 10
@@ -13,26 +13,22 @@ const Home = () => {
 
   return (
     <section id='home'>
-      <div className='homeContainer'>
-        <div className="typewriter">
+      <main className={styles.main}>
+        <div className={styles.typewriter}>
           <p>HELLO WORLD! 👋🏻</p>
           <h1>Eu sou Raphael,</h1>
           <h3>
             <span>{text}</span>
             <span><Cursor/></span>
           </h3>
-          <Link to='talktome'
-            smooth={true} 
-            duration={500}>
-            <button className="btn btn-outline">
-              Fale Comigo
-            </button>
-          </Link>
         </div>
-        <div className="imageContainer">
-          <img src="./airplane4.png" alt="airplane" className="animatedImage" />
-        </div>
-      </div>
+        <Link className={styles.btn}
+          to='talktome'
+          smooth={true}
+          duration={500}>
+          <span>Fale Comigo</span>
+        </Link>
+      </main>
     </section>
   )
 }

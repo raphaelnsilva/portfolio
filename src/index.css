@@ -9,14 +9,12 @@ body {
 :root {
   --color1: #F6FCFF;
   --color2: #EBF2F5;
-  --color3: #6991F0;
-  --color4: #000;
+  --color3: #000;
 }
 [data-theme='dark'] {
   --color1: #1E1E20;
   --color2: #252529;
-  --color3: #6991F0;
-  --color4: #FFFFFF;
+  --color3: #FFFFFF;
 }
 
 a, 
@@ -31,23 +29,4 @@ nav button {
   font-family: 'Montserrat', sans-serif;
 }
 
-a:hover,
-nav button:hover {
-  color: var(--color3);
-}
-
-.btn.btn-outline {
-  background-color: transparent;
-  border-radius: 0;
-  color: var(--color4);
-  border: 1px solid var(--color4);
-  padding: 13px 20px;
-  font-size: 1.1rem;
-}
-
-.btn.btn-outline:hover { 
-  background-color: var(--color3);
-  color: var(--color1);
-  border: 1px solid var(--color3);
-}
 

@@ -1,4 +1,4 @@
-import './Switch.css'
+import styles from './modules/Switch.module.css'
 import useLocalStorage from 'use-local-storage';
 
 const Switch = () => {
@@ -13,9 +13,9 @@ const Switch = () => {
 
   return (
     <div>
-      <label className="switch">
+      <label className={styles.switch}>
         <input onClick={switchTheme} type="checkbox"/>
-        <span className="slider round"></span>
+        <span className={`${styles.slider} ${styles.round}`}></span>
       </label>
     </div>
   )

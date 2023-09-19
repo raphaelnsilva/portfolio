@@ -1,4 +1,4 @@
-import './Navbar.css';
+import styles from './modules/Header.module.css';
 // HOOKS 
 import {useState} from 'react';
 import { Link } from 'react-scroll';
@@ -8,17 +8,17 @@ import {AiOutlineMenu} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
 import Switch from './Switch'
 
-const Navbar = () => {
+const Header = () => {
 
   const [open, setOpen] = useState(false);
 
   const openIcon = <AiOutlineMenu 
-    className='open-icon'
+    className={styles.open_icon}
     size='25px' 
     onClick={() => setOpen(!open)}
   />
   const closeIcon = <IoMdClose
-    className='close-icon'
+    className={styles.close_icon}
     size='25px'
     onClick={() => setOpen(!open)}
   />
@@ -27,15 +27,15 @@ const Navbar = () => {
 
   return (
   
-    <nav className='navbar'>
+    <nav className={styles.navbar}>
       <Link to='home'
        smooth={true} 
        duration={500} 
-       className='brand'>
+      className={styles.brand}>
        <span>Raphael</span>
       </Link>
       <Switch/>
-      <ul className='menu-desktop'>
+      <ul className={styles.menu_desktop}>
         <Link onClick={() => setOpen(!open)}
           to='projects'
           smooth={true} 
@@ -48,38 +48,29 @@ const Navbar = () => {
           duration={500}>
           <li>Sobre Mim</li>
         </Link>
-        <Link className={({isActive}) =>(isActive ? StyleSheet.active : "")}
-          onClick={() => setOpen(!open)} 
+        <Link onClick={() => setOpen(!open)} 
           to='experience' 
           smooth={true} 
           duration={500}>
           <li>Conhecimentos</li>
         </Link>
-
         <Link onClick={() => setOpen(!open)} 
           to='talktome' 
           smooth={true} 
           duration={500}>
           <li>Fale Comigo</li>
         </Link>
-        
       </ul>
       
-      <div className="icons-desktop">
-        <a href='https://github.com/raphaelnsilva' 
-          target='_blank'>
-          <li>{gitIcon}</li>
-        </a>
-        <a href='https://github.com/raphaelnsilva' 
-          target='_blank'>
-          <li>{linkedinIcon}</li>
-        </a>
+      <div className={styles.icons_desktop}>
+        <a href='https://github.com/raphaelnsilva' target='_blank'>{gitIcon}</a>
+        <a href='https://github.com/raphaelnsilva' target='_blank'>{linkedinIcon}</a>
       </div>
 
       {open ? closeIcon : openIcon}
       {open && (
         <>
-          <ul className='menu'>
+          <ul className={styles.menu}>
             <Link onClick={() => setOpen(!open)}
               to='about' 
               smooth={true} 
@@ -104,7 +95,7 @@ const Navbar = () => {
               duration={500}
             ><li>Fale Comigo</li>
             </Link>
-            <div className="icons">
+            <div className={styles.icons_mobile}>
               <a href='https://github.com/raphaelnsilva' 
                 target='_blank'>{gitIcon}</a>
               <a href='https://github.com/raphaelnsilva' 
@@ -119,4 +110,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
+export default Header;

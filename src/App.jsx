@@ -2,7 +2,7 @@ import './App.css'
 import useLocalStorage from 'use-local-storage';
 
 // Components
-import Navbar from './components/Navbar';
+import Header from './components/Header';
 import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div className='App' data-theme={theme}>
-      <Navbar/>
+      <Header/>
       <Home/>
       <Projects/>
       <About/>

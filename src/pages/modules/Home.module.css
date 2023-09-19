@@ -1,15 +1,19 @@
-.homeContainer{
+.main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   background-color: var(--color2);
+  background-image: url("./background5.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .typewriter {
   text-align: center;
-  color: var(--color4);
+  color: #F6FCFF;
 }
 
 .typewriter h1 {
@@ -20,25 +24,25 @@
   padding-bottom: 30px;
 }
 
-.imageContainer {
-  padding-top: 130px;
-  position: relative;
-  width: 250px; 
-  animation: moveUpDown 1s infinite alternate; 
+.btn {
+  margin-top: 5rem;
 }
 
-.animatedImage {
-  width: 250px;
-  height: 150px;
+.btn span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color3);
+  background-color: var(--color1);
+  box-shadow: inset 0 0 0 0 var(--color3);
+  padding: 1rem;
+  transition: color .3s ease-in-out, 
+  box-shadow .3s ease-in-out;
 }
 
-@keyframes moveUpDown {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-20px);
-  }
+.btn span:hover {
+  color: var(--color1);
+  box-shadow: inset 200px 0 0 0 var(--color3);;
 }
 
 @media (min-width: 1024px) {
