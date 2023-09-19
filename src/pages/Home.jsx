@@ -1,5 +1,6 @@
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import { Link } from 'react-scroll';
+import { useEffect, useRef, useState} from 'react';
 import styles from './modules/Home.module.css';
 
 const Home = () => {
