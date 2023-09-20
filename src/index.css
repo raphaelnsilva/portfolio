@@ -10,15 +10,15 @@ body {
   --color1: #F6FCFF;
   --color2: #EBF2F5;
   --color3: #000;
-  --border: #0000007d;
+  --border: #00000022;
   --shadow:rgba(0, 0, 0, 0.375);
 }
 [data-theme='dark'] {
   --color1: #1E1E20;
   --color2: #252529;
   --color3: #FFFFFF;
-  --border: #ffffff7d;
-  --shadow:rgba(153, 153, 153, 0.48);
+  --border: #ffffff23;
+  --shadow:rgba(0, 0, 0, 0.375);
 }
 
 a, 

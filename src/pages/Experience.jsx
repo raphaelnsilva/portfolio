@@ -2,19 +2,17 @@ import styles from './modules/Experience.module.css'
 
 const ExperienceCard = ({imageSrc, title, description}) => (
   <div className={styles.card}>
-    <div>
-      <img src={imageSrc} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+    <img src={imageSrc} alt={title} className={styles.card_img}/>
+    <h1>{title}</h1>
+    <p>{description}</p>
   </div>
 )
 
 const Experience = () => {
   return (
-    <section id='experience'>
-      <main className={styles.main}>
-        <h1>Tecnologias usadas</h1>
+    <main id='experience'>
+      <section className={styles.main}>
+        <h1 className={styles.header_animation}>Tecnologias usadas</h1>
         <div className={styles.content}>
           <ExperienceCard
             imageSrc='./cssImage.png'
@@ -42,8 +40,8 @@ const Experience = () => {
             description='Software de código aberto, multiplataforma, baseado no interpretador V8 do Google. Permite a execução de códigos JavaScript fora do navegador web.'
           />
         </div>
-      </main>
-    </section>
+      </section>
+    </main>
   )
 }
 

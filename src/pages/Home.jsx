@@ -1,5 +1,6 @@
-import {useTypewriter, Cursor} from 'react-simple-typewriter'
+import {useTypewriter, Cursor} from 'react-simple-typewriter';
 import { Link } from 'react-scroll';
+import {Reveal} from '../utils/Reveal'
 import { useEffect, useRef, useState} from 'react';
 import styles from './modules/Home.module.css';
 
@@ -15,20 +16,22 @@ const Home = () => {
   return (
     <section id='home'>
       <main className={styles.main}>
-        <div className={styles.typewriter}>
-          <p>HELLO WORLD! 👋🏻</p>
-          <h1>Eu sou Raphael,</h1>
-          <h3>
-            <span>{text}</span>
-            <span><Cursor/></span>
-          </h3>
-        </div>
-        <Link className={styles.btn}
-          to='talktome'
-          smooth={true}
-          duration={500}>
-          <span>Fale Comigo</span>
-        </Link>
+        <Reveal>
+          <div className={styles.typewriter}>
+            <p>HELLO WORLD! 👋🏻</p>
+            <h1>Eu sou Raphael,</h1>
+            <h3>
+              <span>{text}</span>
+              <span><Cursor/></span>
+            </h3>
+          </div>
+        </Reveal>
+          <Link className={styles.btn}
+            to='talktome'
+            smooth={true}
+            duration={500}>
+            <span>Fale Comigo</span>
+          </Link>
       </main>
     </section>
   )

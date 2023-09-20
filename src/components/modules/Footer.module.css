@@ -10,17 +10,13 @@
   border-top: 1px solid var(--shadow);
 }
 
-
-
 .icons_footer {
   display: flex;
   gap: 40px;
-  transition: 2s;
 }
 
 .icons_footer a:hover {
   transform: scale(1.2);
-  transition: .2s;
 }
 
 @media (max-width: 680px) {
