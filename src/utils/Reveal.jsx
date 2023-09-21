@@ -6,7 +6,7 @@ export const Reveal = ({children, width = "fit-content"}) => {
 
   const ref = useRef(null);
   const isInView = useInView(ref, {onde: true});
-
+ 
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 

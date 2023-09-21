@@ -28,9 +28,8 @@ const Header = () => {
   const linkedinIcon = <AiFillGithub 
     className={styles.social_icons}
     size='30px'/>
-
+    
   return (
-  
     <nav className={styles.navbar}>
       <Link to='home'
        smooth={true} 
@@ -70,7 +69,7 @@ const Header = () => {
       
       <div className={styles.icons_desktop}>
         <a href='https://github.com/raphaelnsilva' target='_blank'>{gitIcon}</a>
-        <a href='https://github.com/raphaelnsilva' target='_blank'>{linkedinIcon}</a>
+        <a href='https://www.linkedin.com/in/raphaelsilvaa' target='_blank'>{linkedinIcon}</a>
       </div>
 
       {open ? closeIcon : openIcon}
