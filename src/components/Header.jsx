@@ -31,45 +31,62 @@ const Header = () => {
     
   return (
     <nav className={styles.navbar}>
-      <Link to='home'
-       smooth={true} 
-       duration={500} 
-      className={styles.brand}>
+      <Link
+        data-aos="fade-down" 
+        to='home'
+        smooth={true} 
+        duration={500} 
+        className={styles.brand}>
        <span>Raphael</span>
       </Link>
 
       <Switch/>
 
       <ul className={styles.menu_desktop}>
-        <Link onClick={() => setOpen(!open)}
+
+        <Link 
+          data-aos="fade-down"
           to='projects'
           smooth={true} 
-          duration={500}>
+          duration={500}
+          onClick={() => setOpen(!open)}>
           <li>Projetos</li>
         </Link>
-        <Link onClick={() => setOpen(!open)}
+
+        <Link 
+          data-aos="fade-down"
           to='about'
           smooth={true} 
-          duration={500}>
+          duration={500}
+          onClick={() => setOpen(!open)}>
           <li>Sobre Mim</li>
         </Link>
-        <Link onClick={() => setOpen(!open)} 
+
+        <Link  
+          data-aos="fade-down"
           to='experience' 
           smooth={true} 
-          duration={500}>
+          duration={500}
+          onClick={() => setOpen(!open)}>
           <li>Conhecimentos</li>
         </Link>
-        <Link onClick={() => setOpen(!open)} 
+
+        <Link 
+          data-aos="fade-down"
           to='talktome' 
           smooth={true} 
-          duration={500}>
+          duration={500}
+          onClick={() => setOpen(!open)}>
           <li>Fale Comigo</li>
         </Link>
       </ul>
       
       <div className={styles.icons_desktop}>
-        <a href='https://github.com/raphaelnsilva' target='_blank'>{gitIcon}</a>
-        <a href='https://www.linkedin.com/in/raphaelsilvaa' target='_blank'>{linkedinIcon}</a>
+        <a href='https://github.com/raphaelnsilva' target='_blank' data-aos="fade-down">
+          {gitIcon}
+        </a>
+        <a href='https://www.linkedin.com/in/raphaelsilvaa' target='_blank' data-aos="fade-down">{linkedinIcon}
+        </a>
       </div>
 
       {open ? closeIcon : openIcon}

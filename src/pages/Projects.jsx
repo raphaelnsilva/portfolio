@@ -1,6 +1,4 @@
-import {FaProjectDiagram} from 'react-icons/fa'
 import styles from './modules/Projects.module.css';
-import {Reveal} from '../utils/Reveal'
 
 const ProjectCard = ({
     title, 
@@ -9,7 +7,7 @@ const ProjectCard = ({
     projectRepo, 
     projectLink
 }) => (
-  <div className={styles.cards}>
+  <div className={styles.cards} data-aos="flip-left">
     <img src={imageSrc} alt={title} />
     <h2>{title}</h2>
     <p>{description}</p>
@@ -24,13 +22,12 @@ const ProjectCard = ({
   </div>
 )
 
-const projectIcon = <FaProjectDiagram size='40px'/>
-
 const Projects = () => {
   return (
     <section id='projects'>
       <main className={styles.main}>
-        <div className={styles.header}>
+        <div 
+        data-aos="flip-left" className={styles.header}>
           <h1>Projetos</h1>
         </div>
         <div className={styles.content}>
