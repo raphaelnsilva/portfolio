@@ -6,7 +6,7 @@
   background-color: var(--color2);
 }
 
-.container_content {
+.containerContent {
   text-indent: 10px;
   display: flex;
   flex-direction: column; 
@@ -22,11 +22,11 @@
   font-weight: 300;
 }
 
-.header_animation {
+.headerAnimation {
   font-size: 1.7rem;
   font-weight: 300;
   padding: 120px 0 30px 0;
-  margin: 0 25px 0 25px;
+  margin: 0 50px 0 50px;
   
   background:
     linear-gradient(
@@ -48,21 +48,21 @@
   transition: background-size 400ms;
 }
 
-.header_animation:hover {
+.headerAnimation:hover {
   background-size: 0 3px, 100% 1px;
 }
 
 
 @media (min-width: 820px) {
-  .header_animation {
+  .headerAnimation {
     font-size: 2.6rem;
-    margin: 0 50px 0 50px;
+    margin: 0 100px 0 100px;
   }
 
   .container p {
     max-width: 600px;
     margin: 0 auto;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
 }

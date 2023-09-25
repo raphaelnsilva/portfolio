@@ -2,14 +2,14 @@ import './App.css'
 import useLocalStorage from 'use-local-storage';
 
 // Components
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './components/header-component/Header';
+import Footer from './components/footer-component/Footer';
 // Pages
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import About from './pages/About';
-import Experience from './pages/Experience';
-import Talktome from './pages/Talktome';
+import Home from './pages/home-page/Home';
+import Projects from './pages/projects-page/Projects';
+import About from './pages/about-page/About';
+import Experience from './pages/experience-page/Experience';
+import Talktome from './pages/talktome-page/Talktome';
 
 
 function App() {
@@ -22,13 +22,6 @@ function App() {
     setTheme(newTheme)
   }
 
-  const myObserver = new IntersectionObserver((entries) => {
-    console.log(entries)
-  })
-
-  const elements = document.querySelectorAll('.hidden')
-
-  elements.forEach((element) => myObserver.observe(element))
 
   return (
     <div className='App' data-theme={theme}>

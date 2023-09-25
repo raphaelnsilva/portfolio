@@ -1,18 +1,14 @@
-import styles from './modules/Experience.module.css'
-
-const ExperienceCard = ({imageSrc, title, description}) => (
-  <div className={styles.card}>
-    <img src={imageSrc} alt={title} className={styles.card_img}/>
-    <h1>{title}</h1>
-    <p>{description}</p>
-  </div>
-)
+import styles from './Experience.module.css'
+import {ExperienceCard} from '../../components/cards-component/Cards'
+import HeaderAnimation from '../../components/header-component-animation/HeaderAnimation'
 
 const Experience = () => {
   return (
     <main id='experience'>
       <section className={styles.main}>
-        <h1 className={styles.header_animation}>Tecnologias usadas</h1>
+        
+        <HeaderAnimation description='Experiencias'/>
+
         <div className={styles.content}>
           <ExperienceCard
             imageSrc='./cssImage.png'

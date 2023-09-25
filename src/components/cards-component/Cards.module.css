@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* PROJECTS PAGE */
+
+.cardProjectsPage {
+  background-color: var(--color2);
+  color: var(--color3);
+  width: 330px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--shadow), 0 8px 5px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cardProjectsPageImage {
+  width: 270px;
+  border-radius: 8px;
+  box-shadow: 0 0 2px var(--shadow), 0 3px 5px var(--shadow);
+}
+
+.cardProjectsPage h2 {
+  font-size: 1rem;
+}
+
+.cardProjectsPage p {
+  width: 270px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-style: italic;
+  padding-bottom: 10px;
+  margin: 0;
+} 
+
+.cardProjectsPageLinks {
+  display: flex;
+  gap: 60px;
+  border-top: 1px  solid var(--border);
+  padding-top: 20px;
+  font-size: 0.7rem;
+}
+
+
+/* EXPERIENCE PAGE */
+
+.cardExperiencePage {
+  background-color: var(--color2);
+  width: 330px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px var(--shadow), 0 8px 5px var(--shadow);
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cardExperiencePage img {
+  width: 100px;
+}
+
+.cardExperiencePage img, h2, p {
+  margin: 0 20px;
+}
+
+
+

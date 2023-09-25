@@ -1,4 +1,4 @@
-import styles from './modules/Footer.module.css'
+import styles from './Footer.module.css'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 
 const Footer = () => {

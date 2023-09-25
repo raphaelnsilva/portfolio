@@ -1,4 +1,4 @@
-import styles from './modules/Switch.module.css'
+import styles from './Switch.module.css'
 import useLocalStorage from 'use-local-storage';
 
 const Switch = () => {
