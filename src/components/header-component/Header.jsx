@@ -71,14 +71,14 @@ const Header = () => {
           <li>Conhecimentos</li>
         </Link>
 
-        <Link 
+        {/* <Link 
           data-aos="fade-down"
           to='talktome' 
           smooth={true} 
           duration={500}
           onClick={() => setOpen(!open)}>
           <li>Fale Comigo</li>
-        </Link>
+        </Link> */}
       </ul>
       
       <div className={styles.icons_desktop}>
@@ -111,12 +111,12 @@ const Header = () => {
               duration={500}
             ><li>Conhecimentos</li> 
             </Link>
-            <Link onClick={() => setOpen(!open)}
+            {/* <Link onClick={() => setOpen(!open)}
               to='talktome'
               smooth={true}
               duration={500}
             ><li>Fale Comigo</li>
-            </Link>
+            </Link> */}
             <div className={styles.icons_mobile}>
               <a href='https://github.com/raphaelnsilva' 
                 target='_blank'>{gitIcon}</a>
