@@ -6,6 +6,7 @@ export const Cards = ({
   description,
   projectRepo,
   projectLink
+  
 }) => (
     <div className={styles.cardProjectsPage} data-aos="zoom-in-down">
       <img className={styles.cardProjectsPageImage} src={imageSrc} alt={title} />
@@ -27,6 +28,7 @@ export const ExperienceCard = ({
   imageSrc, 
   title, 
   description
+
 }) => (
   <div className={styles.cardExperiencePage} data-aos="zoom-in-down" >
     <img src={imageSrc} alt={title}/>

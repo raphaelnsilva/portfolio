@@ -7,15 +7,21 @@
   margin: auto;
   background-color: var(--color2);
   color: var(--color3);
-  border-top: 1px solid var(--shadow);
+  border-top: 1px solid var(--border);
 }
 
-.icons_footer {
+.contentFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.iconsFooter {
   display: flex;
   gap: 40px;
 }
 
-.icons_footer a:hover {
+.iconsFooter a:hover {
   transform: scale(1.2);
 }
 

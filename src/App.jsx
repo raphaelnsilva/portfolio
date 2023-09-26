@@ -30,7 +30,6 @@ function App() {
       <Projects className='hidden'/>
       <About className='hidden'/>
       <Experience className='hidden'/>
-      <Talktome className='hidden'/>
       <Footer className='hidden'/>
     </div>
   )

@@ -5,7 +5,7 @@
   color: var(--color3);
 }
 
-.navbar {
+.header {
   position: fixed;
   width: -webkit-fill-available;
   display: flex;
@@ -16,7 +16,7 @@
   z-index: 1000;
 }
 
-.navbar ul, li {
+.header ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -97,7 +97,7 @@
     margin: 0 10px 0 10px;
   }
 
-  .navbar li{
+  .header li{
     font-weight: 500;
     line-height: 1.5;
     color: var(--color3);
@@ -106,7 +106,7 @@
     box-shadow .3s ease-in-out;
   }
   
-  .navbar li:hover {
+  .header li:hover {
     color: var(--color1);
     box-shadow: inset 200px 0 0 0 var(--color3);;
   }

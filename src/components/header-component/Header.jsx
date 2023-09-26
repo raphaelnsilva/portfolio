@@ -1,12 +1,9 @@
 import styles from './Header.module.css';
 import {useState} from 'react';
-import { Link } from 'react-scroll';
+import {Link} from 'react-scroll';
 
-import {
-  AiOutlineMenu,
-  AiFillLinkedin,
-  AiFillGithub
-} from 'react-icons/ai';
+// icons 
+import {AiOutlineMenu, AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
 import Switch from '../switch-component/Switch'
 
@@ -18,19 +15,22 @@ const Header = () => {
     className={styles.open_icon}
     size='25px' 
     onClick={() => setOpen(!open)}/>
+
   const closeIcon = <IoMdClose
     className={styles.close_icon}
     size='25px'
     onClick={() => setOpen(!open)}/>
+
   const gitIcon = <AiFillLinkedin 
     className={styles.social_icons}
     size='30px'/>
+    
   const linkedinIcon = <AiFillGithub 
     className={styles.social_icons}
     size='30px'/>
     
   return (
-    <nav className={styles.navbar}>
+    <header className={styles.header}>
       <Link
         data-aos="fade-down" 
         to='home'
@@ -126,7 +126,7 @@ const Header = () => {
           </ul>
         </>
       )}
-    </nav>
+    </header>
     
     
   )

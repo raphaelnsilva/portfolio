@@ -7,23 +7,13 @@ const Experience = () => {
     <main id='experience'>
       <section className={styles.main}>
         
-        <HeaderAnimation description='Experiencias'/>
+        <HeaderAnimation description='Experiências'/>
 
         <div className={styles.content}>
           <ExperienceCard
-            imageSrc='./cssImage.png'
-            title='CSS3'
-            description='CSS3 é uma linguagem de estilo usada para descrever a apresentação dos elementos da página os estilizando.'
-          />
-          <ExperienceCard
-            imageSrc='./htmlImage.png'
-            title='HTML5'
-            description='HTML5 é uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.'
-          />
-          <ExperienceCard
-            imageSrc='./javascriptImage.png'
+            imageSrc='./javascript.png'
             title='JavaScript'
-            description='JavaScript é uma linguagem de programação interpretada usada no desenvolvimento web para descrever funcionalidades e comportamentos da página.'
+            description='JavaScript é uma linguagem de programação front-end e back-end amplamente usada no desenvolvimento web para descrever funcionalidades e comportamentos da página.'
           />
           <ExperienceCard
             imageSrc='./reactImage2.png'
@@ -35,6 +25,16 @@ const Experience = () => {
             title='Node'
             description='Software de código aberto, multiplataforma, baseado no interpretador V8 do Google. Permite a execução de códigos JavaScript fora do navegador web.'
           />
+          <ExperienceCard
+            imageSrc='./htmlImage.png'
+            title='HTML5'
+            description='HTML5 é uma linguagem de marcação de hipertexto, que usamos para marcar os elementos da página e construí-la.'
+          />
+          <ExperienceCard
+            imageSrc='./cssImage.png'
+            title='CSS3'
+            description='CSS3 é uma linguagem de estilo usada para descrever a apresentação dos elementos da página os estilizando.'
+          />    
         </div>
       </section>
     </main>
