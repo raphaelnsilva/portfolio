@@ -9,8 +9,6 @@ import Switch from '../switch-component/Switch'
 
 const Header = () => {
 
-  const [open, setOpen] = useState(false);
-
   const openIcon = <AiOutlineMenu 
     className={styles.open_icon}
     size='25px' 
@@ -28,6 +26,8 @@ const Header = () => {
   const linkedinIcon = <AiFillGithub 
     className={styles.social_icons}
     size='30px'/>
+
+  const [open, setOpen] = useState(false);
     
   return (
     <header className={styles.header}>
@@ -41,6 +41,44 @@ const Header = () => {
       </Link>
 
       <Switch/>
+
+      {open ? closeIcon : openIcon}
+      {open && (
+        <>
+          <ul className={styles.menu}>
+            <Link onClick={() => setOpen(!open)}
+              to='about' 
+              smooth={true} 
+              duration={500}>
+              <li>Sobre Mim</li>
+            </Link>
+            <Link onClick={() => setOpen(!open)}  
+              to='projects'   
+              smooth={true} 
+              duration={500}
+            ><li>Projetos</li>
+            </Link>
+            <Link onClick={() => setOpen(!open)}
+              to='experience' 
+              smooth={true} 
+              duration={500}
+            ><li>Conhecimentos</li> 
+            </Link>
+            {/* <Link onClick={() => setOpen(!open)}
+              to='talktome'
+              smooth={true}
+              duration={500}
+            ><li>Fale Comigo</li>
+            </Link> */}
+            <div className={styles.icons_mobile}>
+              <a href='https://github.com/raphaelnsilva' 
+                target='_blank'>{gitIcon}</a>
+              <a href='https://github.com/raphaelnsilva' 
+                target='_blank'>{linkedinIcon}</a>
+            </div>
+          </ul>
+        </>
+      )}
 
       <ul className={styles.menu_desktop}>
 
@@ -89,43 +127,6 @@ const Header = () => {
         </a>
       </div>
 
-      {open ? closeIcon : openIcon}
-      {open && (
-        <>
-          <ul className={styles.menu}>
-            <Link onClick={() => setOpen(!open)}
-              to='about' 
-              smooth={true} 
-              duration={500}>
-              <li>Sobre Mim</li>
-            </Link>
-            <Link onClick={() => setOpen(!open)}  
-              to='projects'   
-              smooth={true} 
-              duration={500}
-            ><li>Projetos</li>
-            </Link>
-            <Link onClick={() => setOpen(!open)}
-              to='experience' 
-              smooth={true} 
-              duration={500}
-            ><li>Conhecimentos</li> 
-            </Link>
-            {/* <Link onClick={() => setOpen(!open)}
-              to='talktome'
-              smooth={true}
-              duration={500}
-            ><li>Fale Comigo</li>
-            </Link> */}
-            <div className={styles.icons_mobile}>
-              <a href='https://github.com/raphaelnsilva' 
-                target='_blank'>{gitIcon}</a>
-              <a href='https://github.com/raphaelnsilva' 
-                target='_blank'>{linkedinIcon}</a>
-            </div>
-          </ul>
-        </>
-      )}
     </header>
     
     
