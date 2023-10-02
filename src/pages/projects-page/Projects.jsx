@@ -1,6 +1,6 @@
 import styles from './Projects.module.css';
 import HeaderAnimation from '../../components/header-component-animation/HeaderAnimation'
-import {Cards} from '../../components/cards-component/Cards'
+import { Cards } from '../../components/cards-component/Cards'
 
 const Projects = () => {
   return (

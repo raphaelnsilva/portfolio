@@ -1,6 +1,5 @@
 import './App.css'
-import useLocalStorage from 'use-local-storage';
-
+import { useState, useEffect } from 'react'
 // Components
 import Header from './components/header-component/Header';
 import Footer from './components/footer-component/Footer';
@@ -9,22 +8,26 @@ import Home from './pages/home-page/Home';
 import Projects from './pages/projects-page/Projects';
 import About from './pages/about-page/About';
 import Experience from './pages/experience-page/Experience';
-import Talktome from './pages/talktome-page/Talktome';
+
 
 
 function App() {
 
-  const defaultDark = window.matchMedia('(prefers-color-schema: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+  const [theme, setTheme] = useState(() => {
+    const defaultDark = window.matchMedia('(prefers-color-schema: dark)').matches;
+    return defaultDark ? 'dark' : 'light';
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+  }, [theme]);
 
   const switchTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme)
-  }
-
+    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
+  };
 
   return (
-    <div className='App' data-theme={theme}>
+    <div className={`App ${theme}`}>
       <Header/>
       <Home className='hidden'/>
       <Projects className='hidden'/>
