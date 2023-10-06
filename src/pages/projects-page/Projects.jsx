@@ -12,6 +12,14 @@ const Projects = () => {
         <div className={styles.content}>
 
           <Cards
+            title='Senha Segura'
+            imageSrc='./safe-password.jpg'
+            description='Projeto desenvolvido com html css e javascript puro. Um app simple para gerar senhas seguras!'
+            projectRepo='https://vercel.com/raphaelnsilva/safe-password/2FDNmx9qr7NXvFBpG1w6LCoK87kf'
+            projectLink='https://safe-password-seven.vercel.app/'
+          />
+
+          <Cards
             title='BLOG'
             imageSrc='./blog.png'
             description='Projeto desenvolvido em React com a utilização do Firebase para gerenciar as autenticações.'
@@ -34,22 +42,7 @@ const Projects = () => {
             projectRepo='https://github.com/raphaelnsilva/secretword'
             projectLink='https://raphaelnsilva.github.io/secretword'
           />
-
-          <Cards
-            title='Buscador de CEP'
-            imageSrc='./cep.png'
-            description='Este site utiliza uma API para colher as informações dos endereços e mostrar ao usuário.'
-            projectRepo='https://github.com/raphaelnsilva/buscador'
-            projectLink='https://raphaelnsilva.github.io/buscador'
-          />
-
-          <Cards
-            title='Buscador de CEP'
-            imageSrc='./cep.png'
-            description='Este site utiliza uma API para colher as informações dos endereços e mostrar ao usuário.'
-            projectRepo='https://github.com/raphaelnsilva/buscador'
-            projectLink='https://raphaelnsilva.github.io/buscador'
-          />
+        
         </div>
       </main>
     </section>

@@ -28,10 +28,10 @@ const Home = () => {
         <Link 
           data-aos="fade-right"
           className={styles.btn}
-          to='talktome'
+          to='projects'
           smooth={true}
           duration={500}>
-          <span>Fale Comigo</span>
+          <span>Projetos </span>
         </Link>
       </main>
     </section>
