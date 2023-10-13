@@ -1,11 +1,11 @@
-import styles from './Header.module.css';
+import styles from '../styles/Header.module.css';
 import {useState} from 'react';
 import {Link} from 'react-scroll';
 
 // icons 
 import {AiOutlineMenu, AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import {IoMdClose} from 'react-icons/io';
-import Switch from '../switch-component/Switch'
+import Switch from './Switch';
 
 const Header = () => {
 

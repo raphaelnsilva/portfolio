@@ -1,39 +1,27 @@
 import './App.css'
-import { useState, useEffect } from 'react'
+
 // Components
-import Header from './components/header-component/Header';
-import Footer from './components/footer-component/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 // Pages
-import Home from './pages/home-page/Home';
-import Projects from './pages/projects-page/Projects';
-import About from './pages/about-page/About';
-import Experience from './pages/experience-page/Experience';
-
-
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import About from './pages/About';
+import Experience from './pages/Experience';
+import Talktome from './pages/Talktome'
 
 function App() {
 
-  const [theme, setTheme] = useState(() => {
-    const defaultDark = window.matchMedia('(prefers-color-schema: dark)').matches;
-    return defaultDark ? 'dark' : 'light';
-  })
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
-  const switchTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-  };
-
   return (
-    <div className={`App ${theme}`}>
-      <Header/>
-      <Home className='hidden'/>
-      <Projects className='hidden'/>
-      <About className='hidden'/>
-      <Experience className='hidden'/>
-      <Footer className='hidden'/>
+    <div className='App'>
+      <Header />
+      <Home />
+      <Projects />
+      {/* <About />
+      <Experience />
+      <Talktome /> */}
+      <Footer />
     </div>
   )
 }

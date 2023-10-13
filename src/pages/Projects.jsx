@@ -1,13 +1,13 @@
-import styles from './Projects.module.css';
-import HeaderAnimation from '../../components/header-component-animation/HeaderAnimation'
-import { Cards } from '../../components/cards-component/Cards'
+import styles from '../styles/Projects.module.css';
+import ComponentAnimation from '../components/ComponentAnimation';
+import { Cards } from '../components/Cards'
 
 const Projects = () => {
   return (
     <section id='projects'>
       <main className={styles.main}>
 
-        <HeaderAnimation description='Projetos'/>
+        <ComponentAnimation description='Projetos'/>
         
         <div className={styles.content}>
 

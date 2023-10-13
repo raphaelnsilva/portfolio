@@ -1,13 +1,13 @@
-import styles from './Experience.module.css'
-import {ExperienceCard} from '../../components/cards-component/Cards'
-import HeaderAnimation from '../../components/header-component-animation/HeaderAnimation'
+import styles from '../styles/Experience.module.css'
+import {ExperienceCard} from '../components/Cards'
+import ComponentAnimation from '../components/ComponentAnimation'
 
 const Experience = () => {
   return (
     <main id='experience'>
       <section className={styles.main}>
         
-        <HeaderAnimation description='Experiências'/>
+        <ComponentAnimation description='Experiências'/>
 
         <div className={styles.content}>
           <ExperienceCard

@@ -1,6 +1,5 @@
-import styles from './HeaderAnimation.module.css'
-
-const HeaderAnimation = ({ description }) => {
+import styles from '../styles/ComponentAnimation.module.css'
+const componentAnimation = ({ description }) => {
   return (
     <header data-aos="fade-right">
       <div
@@ -10,4 +9,4 @@ const HeaderAnimation = ({ description }) => {
   )
 }
 
-export default HeaderAnimation
+export default componentAnimation

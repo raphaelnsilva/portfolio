@@ -1,4 +1,4 @@
-import styles from './Cards.module.css';
+import styles from '../styles/Cards.module.css';
 
 export const Cards = ({
   title,

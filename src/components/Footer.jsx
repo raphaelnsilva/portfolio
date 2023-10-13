@@ -1,6 +1,6 @@
-import styles from './Footer.module.css'
+import styles from '../styles/Footer.module.css'
 import {AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
-import packageJson from '../../../package.json';
+import packageJson from '../../package.json';
 
 const generateIcon = (IconComponent) => (
   <IconComponent size='30px' />
