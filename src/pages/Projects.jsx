@@ -10,6 +10,13 @@ const Projects = () => {
         <ComponentAnimation description='Projetos'/>
         
         <div className={styles.content}>
+          <Cards
+            title='Blog-Next'
+            imageSrc='./nextproject.jpeg'
+            description='Utiliza o DatoCMS para criar posts, testes automatizados, código padronizado, o site é muito rapido.'
+            projectRepo='https://github.com/raphaelnsilva/next-blog'
+            projectLink='https://next-blog-ashy-two.vercel.app/'
+          />
 
           <Cards
             title='Senha Segura'
@@ -20,7 +27,7 @@ const Projects = () => {
           />
 
           <Cards
-            title='BLOG'
+            title='Blog-React'
             imageSrc='./blog.png'
             description='Projeto desenvolvido em React com a utilização do Firebase para gerenciar as autenticações.'
             projectRepo='https://github.com/raphaelnsilva/blog'

@@ -9,7 +9,6 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
 import Experience from './pages/Experience';
-import Talktome from './pages/Talktome'
 
 function App() {
 
@@ -18,9 +17,8 @@ function App() {
       <Header />
       <Home />
       <Projects />
-      {/* <About />
-      <Experience />
-      <Talktome /> */}
+      <About />
+      <Experience />      
       <Footer />
     </div>
   )

@@ -9,15 +9,15 @@ body {
 :root {
   --color1: #F6FCFF;
   --color2: #EBF2F5;
-  --color3: #000;
-  --border: #00000022;
+  --color3: #333;
+  --border: #00000057;
   --shadow:rgba(0, 0, 0, 0.375);
 }
 [data-theme='dark'] {
-  --color1: #1E1E20;
+  --color1: #282728;
   --color2: #252529;
-  --color3: #FFFFFF;
-  --border: #ffffff23;
+  --color3: #eaeaea;
+  --border: #ffffff56;
   --shadow:rgba(0, 0, 0, 0.375);
 }
 
@@ -32,5 +32,6 @@ nav button {
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
 }
+
 
 

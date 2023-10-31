@@ -8,17 +8,13 @@ export const Cards = ({
   projectLink
   
 }) => (
-    <div className={styles.cardProjectsPage} data-aos="zoom-in-down">
+    <div className={styles.cardProjectsPage}data-aos="zoom-in-down" >
       <img className={styles.cardProjectsPageImage} src={imageSrc} alt={title} />
       <h2>{title}</h2>
       <p>{description}</p>
       <div className={styles.cardProjectsPageLinks}>
-        <a href={projectLink} target='_blank'>
-          <h3>Ver Site</h3>
-        </a>
-        <a href={projectRepo} target='_blank'>
-          <h3>Repositório</h3>
-        </a>
+        <a href={projectLink} target='_blank'>Visitar</a>
+        <a href={projectRepo} target='_blank'>Repositório</a>
       </div>
     </div> 
   )
@@ -30,8 +26,8 @@ export const ExperienceCard = ({
   description
 
 }) => (
-  <div className={styles.cardExperiencePage} data-aos="zoom-in-down" >
-    <img src={imageSrc} alt={title}/>
+  <div className={styles.cardExperiencePage}  >
+    <img className={styles.cardExperienceImage} src={imageSrc} alt={title}/>
     <h2>{title}</h2>
     <p>{description}</p>
   </div>

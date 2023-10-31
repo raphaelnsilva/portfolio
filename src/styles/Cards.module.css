@@ -6,65 +6,65 @@
 /* PROJECTS PAGE */
 
 .cardProjectsPage {
-  background-color: var(--color2);
-  color: var(--color3);
-  width: 330px;
-  height: 450px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px var(--shadow), 0 8px 5px var(--shadow);
+  max-width: 350px;
+  height: 100%;
+  margin: 0 20px;
+  padding: 20px 0;
+  box-shadow: 5px 5px 0 var(--border);
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
 }
 
 .cardProjectsPageImage {
-  width: 270px;
-  border-radius: 8px;
-  box-shadow: 0 0 2px var(--shadow), 0 3px 5px var(--shadow);
+  height: 20%;
+  width: 80%;
+  border: 1px solid var(--border);
 }
 
 .cardProjectsPage h2 {
   font-size: 1rem;
+  font-weight: 800;
 }
 
 .cardProjectsPage p {
-  width: 270px;
-  text-align: center;
-  font-size: 0.8rem;
-  font-style: italic;
-  padding-bottom: 10px;
-  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 0 30px;
+  text-indent: 5px;
 } 
 
 .cardProjectsPageLinks {
   display: flex;
-  gap: 60px;
+  gap: 40px;
   border-top: 1px  solid var(--border);
-  padding-top: 20px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 10px 0;
 }
 
 
 /* EXPERIENCE PAGE */
 
 .cardExperiencePage {
-  background-color: var(--color2);
-  width: 330px;
+  max-width: 330px;
   height: 350px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px var(--shadow), 0 8px 5px var(--shadow);
-  font-size: 1rem;
+  margin: 0 20px;
+  font-size: 0.9rem;
+  box-shadow: 5px 5px 0 var(--border);
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
 
-.cardExperiencePage img {
+.cardExperienceImage {
   width: 100px;
 }
+
 
 .cardExperiencePage img, h2, p {
   margin: 0 20px;
