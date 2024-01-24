@@ -1,5 +1,5 @@
-import styles from '../styles/About.module.css'
-import ComponentAnimation from '../components/ComponentAnimation'
+import styles from './About.module.css'
+import ComponentAnimation from '../../components/componentAnimation/ComponentAnimation'
 import { useState } from 'react'
 import {FaWhatsapp} from 'react-icons/fa'
 import clipboardCopy from 'clipboard-copy';
@@ -9,23 +9,23 @@ import {MdOutlineContentCopy} from 'react-icons/md'
 const About = () => {
 
   const [copied, setCopied] = useState(false);
-
   const handleEmailClick = async () => {
     try {
       await clipboardCopy('raphaelnunessilva@hotmail.com');
       setCopied(true);
 
       setTimeout(() => {
-        setCopied(false);
-      }, 2000);
+          setCopied(false);
+        }, 2000
+      );
     } catch (error) {
       console.error('Erro ao copiar para a área de transferência:', error);
     }
   };
 
   return (
-    <main id='about'>
-      <section className={styles.container}>
+    <>
+      <section className={styles.container} id='about'>
         <ComponentAnimation description='Sobre Mim'/>
         <article className={styles.containerContent}>
           <div>
@@ -58,7 +58,7 @@ const About = () => {
           </div>
         </article>
       </section>
-    </main>
+    </>
   )
 }
 

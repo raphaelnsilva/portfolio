@@ -1,8 +1,11 @@
-.close_icon,
-.open_icon,
+.toggle_icon,
 .social_icons {
   cursor: pointer;
   color: var(--color3);
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -11,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em 2em;
+  padding: 28px 16px;
   background-color: var(--color2);
   z-index: 1000;
 }
@@ -62,7 +65,7 @@
 .menu {
   background-color: var(--color2);
   position: absolute;
-  height: 360%;
+  height: 270%;
   width: 100%;
   z-index: 1000;
   top: 80px;
@@ -78,8 +81,7 @@
 
 
 @media (min-width: 1024px) {
-  .close_icon,
-  .open_icon {
+  .toggle_icon {
     display: none;
   }
 

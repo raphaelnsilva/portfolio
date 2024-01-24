@@ -1,23 +1,26 @@
-import styles from '../styles/Header.module.css';
-import {useState} from 'react';
-import {Link} from 'react-scroll';
+import styles from './Header.module.css'
+import { useState } from 'react'
+import { Link } from 'react-scroll'
 
 // icons 
-import {AiOutlineMenu, AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
-import {IoMdClose} from 'react-icons/io';
-import Switch from './Switch';
+import { AiOutlineMenu, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { IoMdClose } from 'react-icons/io'
+import Switch from '../Switch'
 
 const Header = () => {
+  const [open, setOpen] = useState(false)
 
   const openIcon = <AiOutlineMenu 
-    className={styles.open_icon}
+    className={styles.toggle_icon}
     size='25px' 
-    onClick={() => setOpen(!open)}/>
+    onClick={() => setOpen(!open)}
+  />
 
   const closeIcon = <IoMdClose
-    className={styles.close_icon}
+    className={styles.toggle_icon}
     size='25px'
-    onClick={() => setOpen(!open)}/>
+    onClick={() => setOpen(!open)}
+  />
 
   const gitIcon = <AiFillLinkedin 
     className={styles.social_icons}
@@ -27,7 +30,6 @@ const Header = () => {
     className={styles.social_icons}
     size='30px'/>
 
-  const [open, setOpen] = useState(false);
     
   return (
     <header className={styles.header}>
@@ -37,11 +39,9 @@ const Header = () => {
         smooth={true} 
         duration={500} 
         className={styles.brand}>
-       <span>Raphael</span>
+       <span>raphael</span>
       </Link>
-
-      <Switch/>
-
+      <Switch />
       {open ? closeIcon : openIcon}
       {open && (
         <>
@@ -62,14 +62,8 @@ const Header = () => {
               to='experience' 
               smooth={true} 
               duration={500}
-            ><li>Conhecimentos</li> 
+            ><li>Tecnologias</li> 
             </Link>
-            {/* <Link onClick={() => setOpen(!open)}
-              to='talktome'
-              smooth={true}
-              duration={500}
-            ><li>Fale Comigo</li>
-            </Link> */}
             <div className={styles.icons_mobile}>
               <a href='https://github.com/raphaelnsilva' 
                 target='_blank'>{gitIcon}</a>
@@ -79,9 +73,7 @@ const Header = () => {
           </ul>
         </>
       )}
-
       <ul className={styles.menu_desktop}>
-
         <Link 
           data-aos="fade-down"
           to='projects'
@@ -90,7 +82,6 @@ const Header = () => {
           onClick={() => setOpen(!open)}>
           <li>Projetos</li>
         </Link>
-
         <Link 
           data-aos="fade-down"
           to='about'
@@ -98,27 +89,16 @@ const Header = () => {
           duration={500}
           onClick={() => setOpen(!open)}>
           <li>Sobre Mim</li>
-        </Link>
-
+        </Link> 
         <Link  
           data-aos="fade-down"
           to='experience' 
           smooth={true} 
           duration={500}
           onClick={() => setOpen(!open)}>
-          <li>Conhecimentos</li>
+          <li>Tecnologias</li>
         </Link>
-
-        {/* <Link 
-          data-aos="fade-down"
-          to='talktome' 
-          smooth={true} 
-          duration={500}
-          onClick={() => setOpen(!open)}>
-          <li>Fale Comigo</li>
-        </Link> */}
       </ul>
-      
       <div className={styles.icons_desktop}>
         <a href='https://github.com/raphaelnsilva' target='_blank' data-aos="fade-down">
           {gitIcon}
@@ -128,9 +108,7 @@ const Header = () => {
       </div>
 
     </header>
-    
-    
   )
 }
 
-export default Header;
+export default Header

@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
   font-family:'Montserrat', Arial, Helvetica, sans-serif;
@@ -12,8 +12,10 @@ body {
   --color3: #333;
   --border: #00000057;
   --shadow:rgba(0, 0, 0, 0.375);
+  --project-link-background: #00000024;
 }
 [data-theme='dark'] {
+  --project-link-background: #ffffff35;
   --color1: #282728;
   --color2: #252529;
   --color3: #eaeaea;

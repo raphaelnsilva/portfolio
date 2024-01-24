@@ -1,4 +1,4 @@
-import styles from '../styles/ComponentAnimation.module.css'
+import styles from './ComponentAnimation.module.css'
 const componentAnimation = ({ description }) => {
   return (
     <header data-aos="fade-right">

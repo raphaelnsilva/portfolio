@@ -1,26 +1,23 @@
 import './App.css'
-
 // Components
-import Header from './components/Header';
-import Footer from './components/Footer';
-
+import Header from './components/header/Header'
+import Footer from './components/Footer'
 // Pages
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import About from './pages/About';
-import Experience from './pages/Experience';
+import Home from './pages/Home'
+import Projects from './pages/Projects'
+// import About from './pages/about/About'
+import Experience from './pages/Experience'
 
 function App() {
-
   return (
-    <div className='App'>
+    <main className='App'>
       <Header />
       <Home />
       <Projects />
-      <About />
+      {/* <About /> */}
       <Experience />      
       <Footer />
-    </div>
+    </main>
   )
 }
 
