@@ -10,7 +10,7 @@ const HomeContainer = styled.section`
   justify-content: center;
   height: 100vh;
   background-color: var(--color2);
-  background-image: url("../background.jpg");
+  background-image: url("./background.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
