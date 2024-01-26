@@ -1,5 +1,5 @@
 import * as React from 'react'
-import ComponentAnimation from '../components/componentAnimation/ComponentAnimation'
+import AnimatedHeader from '../components/AnimatedHeader'
 import ProjectCard from '../components/ProjectCard'
 import styled from 'styled-components'
 import Tag from '../components/Tag'
@@ -41,7 +41,7 @@ const ProjectsCards = styled.div`
 const Projects = () => {
   return (
     <ProjectsContainer id='projects'>
-      <ComponentAnimation description='Projetos em destaque'/>
+      <AnimatedHeader description='Projetos em destaque'/>
       <ProjectsCards>
         <ProjectCard
           title='Mundo Da Cozinha'

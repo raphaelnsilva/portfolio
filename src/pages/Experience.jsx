@@ -1,6 +1,6 @@
 import * as React from 'react'
 import ExperienceCard from '../components/ExperienceCard'
-import ComponentAnimation from '../components/componentAnimation/ComponentAnimation'
+import AnimatedHeader from '../components/AnimatedHeader'
 import styled from 'styled-components'
 
 const ExperienceContainer = styled.section`
@@ -23,15 +23,14 @@ const ExperiencesCards = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  
+  }  
 `
 
 const Experience = () => {
   return (
     <React.Fragment>
       <ExperienceContainer id='experience'>
-        <ComponentAnimation description='Tecnologias'/>
+        <AnimatedHeader description='Tecnologias'/>
         <ExperiencesCards>
           <ExperienceCard
             imageSrc='./typescript.png'

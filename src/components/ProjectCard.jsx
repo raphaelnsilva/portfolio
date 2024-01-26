@@ -9,18 +9,18 @@ const CardContainer = styled.div`
   gap: 1.5rem;
   padding: 0.8rem;
 
-  width: 74%;
+  width: 80%;
   max-width: 330px;
   height: 100%;
   box-shadow: 5px 5px 0 var(--border);
   border: 1px solid var(--border);
   margin: 0 1.5rem;
   h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 800;
   }
   p {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   a:hover {
     text-decoration: underline;
@@ -49,6 +49,19 @@ const Header = styled.header `
     text-overflow: ellipsis; 
     font-size: 0.7rem;
   }
+  @media (min-width: 400px) {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+    div, a {
+      font-size: 0.8rem;
+    }
+  }
 `
 const ProjectLink = styled.div`
   display: flex; 
@@ -62,6 +75,12 @@ const ProjectLink = styled.div`
     overflow: hidden;
     text-overflow: ellipsis; 
     font-size: 0.7rem;
+  }
+
+  @media (min-width: 400px) {
+    a {
+      font-size: 0.8rem;
+    }
   }
 `
 

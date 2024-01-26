@@ -1,23 +1,28 @@
-import './App.css'
 // Components
-import Header from './components/header/Header'
+import Header from './components/Header'
 import Footer from './components/Footer'
 // Pages
 import Home from './pages/Home'
 import Projects from './pages/Projects'
-// import About from './pages/about/About'
+import About from './pages/About'
 import Experience from './pages/Experience'
+import styled from 'styled-components'
+
+const AppContainer = styled.main`
+  min-height: 60vh;
+  background-color: var(--color2);
+`
 
 function App() {
   return (
-    <main className='App'>
+    <AppContainer>
       <Header />
       <Home />
       <Projects />
-      {/* <About /> */}
+      <About />
       <Experience />      
       <Footer />
-    </main>
+    </AppContainer>
   )
 }
 

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components'
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const CardExperienceContainer = styled.section`
   width: 86%;
@@ -67,8 +66,6 @@ const ProjectLink = styled.div`
 `
 
 const ExperienceCard = (props) => {
-  const [showMore, setShowMore] = React.useState(false);
-
   return (
     <React.Fragment>
       <CardExperienceContainer data-aos="zoom-in-down">
@@ -78,19 +75,11 @@ const ExperienceCard = (props) => {
             <img src={props.imageSrc} alt={props.title}/>
           </ExperienceTitle>
           <p>{props.description}</p>
-          {showMore &&
-            <React.Fragment>
-              <h5>Meus projetos com {props.title}:</h5>
-              <ProjectLink>
-                <img src={props.projectsBrand} alt={props.projectsBrand} />
-                <a href={props.projectsLink} target='_blank'>{props.projectsLink}</a>
-              </ProjectLink>
-            </React.Fragment>
-          }
-          <span onClick={() => setShowMore(!showMore)}>
-            {showMore ? 'Ver menos' : 'Ver mais'}
-            {showMore ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </span>
+          <h5>Meus projetos com {props.title}:</h5>
+          <ProjectLink>
+            <img src={props.projectsBrand} alt={props.projectsBrand} />
+            <a href={props.projectsLink} target='_blank'>{props.projectsLink}</a>
+          </ProjectLink>
         </ExperienceContent>
       </CardExperienceContainer>
     </React.Fragment>
